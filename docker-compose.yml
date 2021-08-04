@@ -1,0 +1,31 @@
+version: '3.0'
+services:
+  mq-service:
+    image: rabbitmq:3-management-alpine
+    ports:
+      - 15672:15672
+      - 5672:5672
+    environment:
+      RABBITMQ_DEFAULT_USER: 'onsweb-mail'
+      RABBITMQ_DEFAULT_PASS: 'password'
+    volumes:
+      - mail-rabbitmq-data:/var/lib/rabbitmq
+
+  maildev:
+    image: maildev/maildev:2.0.0-beta3
+    ports:
+      - 1080:1080
+      - 1025:1025
+    environment:
+      MAILDEV_WEB_USER: admin
+      MAILDEV_WEB_PASS: password
+      MAILDEV_INCOMING_USER: maildev
+      MAILDEV_INCOMING_PASS: password
+      MAILDEV_WEB_PORT: 1080
+      MAILDEV_SMTP_PORT: 1025
+    volumes:
+      - mail-maildev-data:/var/lib/maildev
+
+volumes:
+  mail-rabbitmq-data:
+  mail-maildev-data:

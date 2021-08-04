@@ -1,0 +1,78 @@
+{
+  "templateName": "test",
+  "to": "92edgarsargsyan@gmail.com",
+  "data": {
+    "subject": "My Subject",
+    "body": "<p>MY EXAMPLE BODY</p>",
+    "bodyText": "MY EXAMPLE TEXT BODY"
+  },
+  "language": "en",
+  "from": "test@example.com",
+  "cc": [
+    "test@example.com"
+  ],
+  "bcc": [
+    "test@example.com"
+  ],
+  "attachments": [
+    {
+      "filename": "test.zip",
+      "content": "BASE64_STRING",
+      "encoding": "base64",
+      "contentType": "application/zip"
+    }
+  ]
+}
+
+{
+  "templateName": "test",
+  "to": "92edgarsargsyan@gmail.com",
+  "data": {
+    "subject": "My Subject",
+    "body": "<p>MY EXAMPLE BODY</p>",
+    "bodyText": "MY EXAMPLE TEXT BODY"
+  },
+  "language": "en",
+  "from": "test@example.com",
+  "cc": [
+    "test@example.com"
+  ],
+  "bcc": [
+    "test@example.com"
+  ],
+  "attachments": [
+    {
+      "filename": "test.zip",
+      "encoding": "base64",
+      "contentType": "application/zip",
+      "content": ""
+    }
+  ]
+}
+
+{
+  "templateName": "wrong-info",
+  "to": "example@example.com",
+  "data": {
+    "userName": "TEST user name",
+    "email": "example@example.com",
+    "companyTitle": "TEST company title",
+    "productTitle": "TEST product title",
+    "type": "TEST type",
+    "message": "TEST",
+    "url": "https://test-url.com"
+  },
+  "language": "en"
+}
+
+{
+  "templateName": "wrong-info",
+  "to": "example@example.com",
+  "userName": "TEST user name",
+  "email": "example@example.com",
+  "companyTitle": "TEST company title",
+  "productTitle": "TEST product title",
+  "type": "TEST type",
+  "message": "TEST",
+  "url": "https://test-url.com",
+}
