@@ -33,7 +33,7 @@
     "@nestjs/common": "6.1.1",
     "@nestjs/config": "^0.6.3",
     "@nestjs/core": "6.1.1",
-    "@nestjs/microservices": "^6.9.0",
+    "@nestjs/microservices": "^11.1.19",
     "@nestjs/platform-express": "^6.9.0",
     "@types/amqplib": "^0.5.13",
     "@types/email-templates": "^6.0.0",
